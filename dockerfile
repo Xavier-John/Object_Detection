@@ -20,5 +20,5 @@ RUN pip install scikit-image
 RUN pip install jupyter
 RUN pip install pandas
 RUN pip install lxml 
-
+#RUN curl -sSL https://sdk.cloud.google.com | bash
 CMD ["/run_jupyter.sh"]
