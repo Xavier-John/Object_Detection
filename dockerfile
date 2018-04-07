@@ -8,5 +8,6 @@ RUN git clone https://github.com/Xavier-John/Object_Detection.git /notebooks/obj
 RUN wget http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11_06_2017.tar.gz
 RUN tar xvzf ssd_mobilenet_v1_coco_11_06_2017.tar.gz
 WORKDIR "/notebooks/object"
-RUN pip install -r ./requirements.txt
+#RUN pip install -r ./requirements.txt
+RUN pip install requirements.txt
 CMD ["/run_jupyter.sh"]
